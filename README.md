@@ -1,29 +1,54 @@
-Descriptive Statistical Analysis and Data Visualization in MATLAB
 
-Project Overview
+## Project Overview
+### Results
+**Important**
+*Description*
+- Statistical Analysis
+![Surface Plot](Result/Six_Surfaces.png)
+
+
+
+
+
+
+
+
+# Descriptive Statistical Analysis and Data Visualization in MATLAB
+
+
+
+
+
+## Project Overview
 
 This project demonstrates a complete introductory workflow for descriptive statistical analysis using MATLAB.
 
 The analysis includes organizing a numerical dataset, calculating descriptive statistical measures, verifying the standard deviation using two methods, visualizing the data, and exporting results for further analysis.
 
-Tools: MATLAB, Mermaid, GitHub
-Methods: Descriptive Statistics, Data Visualization, Mathematical Verification
 
-1. Dataset
+*Tools: MATLAB, Mermaid, GitHub*
+
+*Methods: Descriptive Statistics, Data Visualization, Mathematical Verification*
+
+
+
+### 1. Dataset
 
 The project uses a sample dataset containing 10 numerical observations:
 
-[60, 80, 100, 110, 120, 140, 150, 160, 180, 200]
+### [60, 80, 100, 110, 120, 140, 150, 160, 180, 200]
 
 The values are organized into a MATLAB table with two columns:
 
-Index — observation number
+- Index — observation number
 
-Data1 — numerical value
+- Data1 — numerical value
 
 This is a synthetic dataset created for educational and demonstration purposes.
 
-2. Statistical Analysis
+
+
+### 2. Statistical Analysis
 
 The following descriptive statistical measures are calculated:
 
@@ -75,7 +100,7 @@ Sample Standard Deviation
 
 Quartiles and the IQR are also calculated using MATLAB's prctile function.
 
-3. Standard Deviation Verification
+### 3. Standard Deviation Verification
 
 The sample standard deviation is calculated using two methods:
 
@@ -93,7 +118,7 @@ The difference between the two results is calculated to verify numerical consist
 
 The project also produces a calculation table containing the original observations, the mean, deviations from the mean, and squared deviations.
 
-4. Data Visualization
+### 4. Data Visualization
 
 Four visualizations are produced:
 
@@ -111,7 +136,7 @@ Statistical Plots
 
 
 
-5. Analysis Workflow
+### 5. Analysis Workflow
 
 The project workflow is documented using a Mermaid flowchart.
 
@@ -119,7 +144,7 @@ The project workflow is documented using a Mermaid flowchart.
 
 The editable Mermaid source is available in Results/Flowchart.mmd.
 
-6. Project Structure
+### 6. Project Structure
 
 M_Stat_Analysis/
 │
@@ -137,7 +162,7 @@ M_Stat_Analysis/
     ├── Flowchart.png
     └── Flowchart.mmd
 
-7. How to Run the Project
+### 7. How to Run the Project
 
 Open MATLAB.
 
@@ -155,7 +180,7 @@ Find the exported CSV files and PNG visualization in the Data and Results folder
 
 The project uses MATLAB's Statistics and Machine Learning Toolbox for prctile and boxplot.
 
-8. Project Outcomes
+### 8. Project Outcomes
 
 This project demonstrates practical experience in:
 
