@@ -1,0 +1,11 @@
+flowchart TB
+    A["Start"] -- Dataset --> B("Descriptive Statistical Measures")
+    B --> C("Standard Deviation") 
+    C -- Matlab --> D("Matlab Calculation")
+    C -- Formula --> E("Math Calculation") --> G
+    D --> G{"Verified Difference = 0"}
+    G --> J("no") & I("yes")
+    I --> K
+    J --> C
+    K("BoxPlot Summary") --> L("Gaussian probability curve") -->M("Vizualization") 
+    M --> N["End"]
