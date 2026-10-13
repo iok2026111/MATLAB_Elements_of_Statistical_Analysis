@@ -9,13 +9,11 @@
 
 %% 2. Organizing the dataset
 
-data = [60; 80; 100; 110; 120; ...
-        140; 150; 160; 180; 200];
+data = [60; 80; 100; 110; 120; 140; 150; 160; 180; 200];
 
 k = (1:length(data))';
 
-df = table(k,data, ...
-    'VariableNames',{'Index','Data1'});
+df = table(k,data,'VariableNames',{'Index','Data1'});
 
 format long g
 
@@ -56,33 +54,22 @@ StD_MF = sqrt(Variance_MF);
 % 4.3 Verification
 difference = abs(builtInStd-StD_MF);
 
-StdComparison = table( ...
-    builtInStd,StD_MF,difference, ...
-    'VariableNames', ...
-    {'MATLAB_Std','Formula_Std','Difference'});
+StdComparison = table(builtInStd,StD_MF,difference,'VariableNames',{'MATLAB_Std','Formula_Std','Difference'});
 
 fprintf('\nStandard deviation verification:\n')
 disp(StdComparison)
 
 % 4.4 Calculation table
-Calculation = table( ...
-    df.Index,df.Data1, ...
-    repmat(Mean,n,1), ...
-    Deviation,SquaredDeviation, ...
-    'VariableNames', ...
-    {'Index','Data','Mean','Deviation', ...
-     'SquaredDeviation'});
+Calculation = table(df.Index,df.Data1,repmat(Mean,n,1),Deviation,SquaredDeviation,'VariableNames',{'Index','Data','Mean','Deviation','SquaredDeviation'});
 
 fprintf('\nCalculation details:\n')
 disp(Calculation)
 
 %% 5. Statistical summary
 
-Measure = ["Mean";"Median";"Std";"Variance"; ...
-           "Min";"Q1";"Q2";"Q3";"Max";"IQR"];
+Measure = ["Mean";"Median";"Std";"Variance";"Min";"Q1";"Q2";"Q3";"Max";"IQR"];
 
-Value = [Mean;Median;StD;Variance; ...
-         Min;Q1;Q2;Q3;Max;IQR_R];
+Value = [Mean;Median;StD;Variance;Min;Q1;Q2;Q3;Max;IQR_R];
 
 Summary = table(Measure,Value);
 
@@ -93,13 +80,11 @@ disp(Summary)
 
 x = linspace(Mean-4*StD,Mean+4*StD,500);
 
-y = exp(-0.5*((x-Mean)/StD).^2) ...
-    /(StD*sqrt(2*pi));
+y = exp(-0.5*((x-Mean)/StD).^2)/(StD*sqrt(2*pi));
 
 %% 7. Data visualization
 
-fig = figure('Color','w', ...
-    'Position',[100 100 1100 750]);
+fig = figure('Color','w','Position',[100 100 1100 750]);
 
 % Plot 1: Original data
 subplot(2,2,1)
@@ -155,22 +140,18 @@ if ~isfolder(resultsFolder)
     mkdir(resultsFolder);
 end
 
+
 %% Export Statistical Results
 
 writetable(df,fullfile(dataFolder,'sample_data.csv'));
 
-writetable(Summary, ...
-    fullfile(resultsFolder,'statistical_summary.csv'));
+writetable(Summary,fullfile(resultsFolder,'statistical_summary.csv'));
 
-writetable(Calculation, ...
-    fullfile(resultsFolder,'calculation_stat_measures.csv'));
+writetable(Calculation,fullfile(resultsFolder,'calculation_stat_measures.csv'));
 
-writetable(StdComparison, ...
-    fullfile(resultsFolder,'std_verification.csv'));
+writetable(StdComparison,fullfile(resultsFolder,'std_verification.csv'));
 
-exportgraphics(fig, ...
-    fullfile(resultsFolder,'statistical_plots.png'), ...
-    'Resolution',300);
+exportgraphics(fig,fullfile(resultsFolder,'statistical_plots.png'),'Resolution',300);
 
 %% Display Flowchart
 
