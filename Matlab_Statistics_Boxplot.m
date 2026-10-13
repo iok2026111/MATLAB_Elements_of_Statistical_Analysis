@@ -42,13 +42,14 @@ IQR_R = Q3-Q1;
 builtInStd = std(df.Data1);
 
 % 4.2 Mathematical formula
-n = length(df.Data1);
+% s = sqrt(1/(n-1) * sum((df.Data1 - mean(df.Data1)).^2))
 
+n = length(df.Data1);
 Deviation = df.Data1 - Mean;
 SquaredDeviation = Deviation.^2;
 SumSquared = sum(SquaredDeviation);
-
 Variance_MF = SumSquared/(n-1);
+
 StD_MF = sqrt(Variance_MF);
 
 % 4.3 Verification
