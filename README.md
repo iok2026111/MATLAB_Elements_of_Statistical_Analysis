@@ -16,7 +16,7 @@ The analysis includes organizing a numerical dataset, calculating descriptive st
 **Tools: MATLAB, Mermaid, GitHub**
 
 **Methods: Descriptive Statistics, Data Visualization, Mathematical Verification**
-
+[View_MATLAB_Source_code](Matlab_Statistics_Boxplot.m)
 
 
 ### 1. Dataset
@@ -82,7 +82,7 @@ The sample standard deviation is calculated using two methods:
 
     Method 1: 
     - MATLAB built-in function:
-        std(data)
+        std(df.Data1)
 
     
     Method 2: 
