@@ -36,7 +36,7 @@ The analysis includes organizing a numerical dataset, calculating descriptive st
 
 The project uses a sample dataset containing 10 numerical observations:
 
-### [60, 80, 100, 110, 120, 140, 150, 160, 180, 200]
+    [60, 80, 100, 110, 120, 140, 150, 160, 180, 200]
 
 The values are organized into a MATLAB table with two columns:
 
@@ -52,87 +52,72 @@ This is a synthetic dataset created for educational and demonstration purposes.
 
 The following descriptive statistical measures are calculated:
 
-Mean and Median
+    - Mean and Median
 
-Minimum and Maximum
+    - Minimum and Maximum
 
-First Quartile (Q1), Median (Q2), and Third Quartile (Q3)
+    - First Quartile (Q1), Median (Q2), and Third Quartile (Q3)
 
-Interquartile Range (IQR)
+    - Interquartile Range (IQR)
 
-Sample Variance
+    - Sample Variance
 
-Sample Standard Deviation
+    - Sample Standard Deviation
+    
 
-Main Results
+**Main Results**
 
-Measure
+    Measure,     Value
+    Mean,        130
+    Median,      130
+    Std,         44.2216638714053
+    Variance,    1955.55555555556
+    Min,         60
+    Q1,          100
+    Q2,          130
+    Q3,          160
+    Max,         200
+    IQR,         60
 
-Value
 
-Number of observations
 
-10
-
-Mean
-
-130.00
-
-Median
-
-130.00
-
-Minimum
-
-60.00
-
-Maximum
-
-200.00
-
-Sample Variance
-
-1955.56
-
-Sample Standard Deviation
-
-44.22
-
-Quartiles and the IQR are also calculated using MATLAB's prctile function.
 
 ### 3. Standard Deviation Verification
 
 The sample standard deviation is calculated using two methods:
 
-Method 1: MATLAB built-in function
+    Method 1: MATLAB built-in function
 
-std(data)
+    std(data)
 
-Method 2: Mathematical formula
+    
+    Method 2: Mathematical formula
 
-[
-s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
-]
+    [
+    s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
+    ]
 
-The difference between the two results is calculated to verify numerical consistency.
+**The difference between the two results is calculated to verify numerical consistency.**
 
 The project also produces a calculation table containing the original observations, the mean, deviations from the mean, and squared deviations.
+
+
+
 
 ### 4. Data Visualization
 
 Four visualizations are produced:
 
-Original Dataset: A line chart showing the ten observations.
+    - Original Dataset: A line chart showing the ten observations.
 
-BoxPlot: A graphical summary of the data distribution, quartiles, median, and potential outliers.
+    - BoxPlot: A graphical summary of the data distribution, quartiles, median, and potential outliers.
 
-Theoretical Gaussian Density: A normal probability density curve using the sample mean and standard deviation.
+    - Theoretical Gaussian Density: A normal probability density curve using the sample mean and standard deviation.
 
-Deviations from Mean: A bar chart showing how each observation differs from the sample mean.
+    - Deviations from Mean: A bar chart showing how each observation differs from the sample mean.
 
 The Gaussian curve is included as a theoretical comparison and does not establish that the ten observations follow a normal distribution.
 
-Statistical Plots
 
 
 
