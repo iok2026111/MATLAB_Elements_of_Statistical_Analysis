@@ -87,7 +87,7 @@ The sample standard deviation is calculated using two methods:
     
     Method 2: 
     - Mathematical formula:
-       s = sqrt(1/(n-1) * sum((df.Data1 - mean(df.Data1)).^2))
+       StD_MF = sqrt(1/(n-1) * sum((df.Data1 - mean(df.Data1)).^2))
   
 
 **The difference between the two results is calculated to verify numerical consistency.**
