@@ -42,7 +42,7 @@ IQR_R = Q3-Q1;
 builtInStd = std(df.Data1);
 
 % 4.2 Mathematical formula
-% s = sqrt(1/(n-1) * sum((df.Data1 - mean(df.Data1)).^2))
+% StD_MF = sqrt(1/(n-1) * sum((df.Data1 - mean(df.Data1)).^2))
 
 n = length(df.Data1);
 Deviation = df.Data1 - Mean;
