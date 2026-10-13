@@ -34,6 +34,10 @@ The values are organized into a MATLAB table with two columns:
 **This is a synthetic dataset created for educational and demonstration purposes.**
 
 
+[View Dataset](Data/sample_data.csv)
+
+
+
 
 ### 2. Statistical Analysis
 
@@ -51,6 +55,9 @@ The following descriptive statistical measures are calculated:
 
     - Sample Standard Deviation
     
+[View 111](Result/calculation_stat_measures.csv)
+[View 111](Result/calculation_stat_measures.csv)
+
 
 **Main Results**
 
@@ -66,7 +73,7 @@ The following descriptive statistical measures are calculated:
     Max,         200
     IQR,         60
 
-
+[View Statistica_Summary](Result/statistical_summary.csv)
 
 
 ### 3. Standard Deviation Verification
@@ -87,6 +94,8 @@ The sample standard deviation is calculated using two methods:
 
 **The difference between the two results is calculated to verify numerical consistency.**
 
+[View Standard_Deviation_Verification](Result/std_verification.csv)
+
 The project also produces a calculation table containing the original observations, the mean, deviations from the mean, and squared deviations.
 
 
@@ -106,7 +115,7 @@ Four visualizations are produced:
 
 The Gaussian curve is included as a theoretical comparison and does not establish that the ten observations follow a normal distribution.
 
-[View Flowchart](Result/Plot.png)
+[View Statistical_Plotst](Result/statistical_plots.png)
 
 
 
@@ -115,7 +124,9 @@ The Gaussian curve is included as a theoretical comparison and does not establis
 The project workflow is documented using a Mermaid flowchart.
 The editable Mermaid source is available in Results/Flowchart.mmd
 
-[View Flowchart](Result/Flowchart.mmd)
+[View Flowchart mmd](Result/Flowchart.mmd)
+
+[View Flowchart_png](Result/Flowchart.png)
 
 
 
