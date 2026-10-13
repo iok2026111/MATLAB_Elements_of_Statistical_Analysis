@@ -57,7 +57,7 @@ The following descriptive statistical measures are calculated:
 
     - Sample Standard Deviation
     
-[View 111](Result/calculation_stat_measures.csv)
+[View Statistical_Measures](Result/calculation_stat_measures.csv)
 
 
 
@@ -75,7 +75,7 @@ The following descriptive statistical measures are calculated:
     Max,         200
     IQR,         60
 
-[View Statistica_Summary](Result/statistical_summary.csv)
+[View Statistical_Summary](Result/statistical_summary.csv)
 
 
 
@@ -116,7 +116,7 @@ Four visualizations are produced:
 
 The Gaussian curve is included as a theoretical comparison and does not establish that the ten observations follow a normal distribution.
 
-[View Statistical_Plotst](Result/statistical_plots.png)
+[View Statistical_Plots](Result/statistical_plots.png)
 
 
 
