@@ -16,7 +16,9 @@ The analysis includes organizing a numerical dataset, calculating descriptive st
 **Tools: MATLAB, Mermaid, GitHub**
 
 **Methods: Descriptive Statistics, Data Visualization, Mathematical Verification**
+
 [View_MATLAB_Source_code](Matlab_Statistics_Boxplot.m)
+
 
 
 ### 1. Dataset
@@ -56,7 +58,7 @@ The following descriptive statistical measures are calculated:
     - Sample Standard Deviation
     
 [View 111](Result/calculation_stat_measures.csv)
-[View 111](Result/calculation_stat_measures.csv)
+
 
 
 **Main Results**
@@ -74,6 +76,7 @@ The following descriptive statistical measures are calculated:
     IQR,         60
 
 [View Statistica_Summary](Result/statistical_summary.csv)
+
 
 
 ### 3. Standard Deviation Verification
@@ -117,6 +120,7 @@ The Gaussian curve is included as a theoretical comparison and does not establis
 
 
 
+
 ### 5. Analysis Workflow
 
 The project workflow is documented using a Mermaid flowchart.
@@ -125,6 +129,7 @@ The editable Mermaid source is available in Results/Flowchart.mmd
 [View Flowchart mmd](Result/Flowchart.mmd)
 
 [View Flowchart_png](Result/Flowchart.png)
+
 
 
 
