@@ -1,17 +1,4 @@
 
-## Project Overview
-### Results
-**Important**
-*Description*
-- Statistical Analysis
-![Surface Plot](Result/Six_Surfaces.png)
-
-
-
-
-
-
-
 
 # Descriptive Statistical Analysis and Data Visualization in MATLAB
 
@@ -26,9 +13,9 @@ This project demonstrates a complete introductory workflow for descriptive stati
 The analysis includes organizing a numerical dataset, calculating descriptive statistical measures, verifying the standard deviation using two methods, visualizing the data, and exporting results for further analysis.
 
 
-*Tools: MATLAB, Mermaid, GitHub*
+**Tools: MATLAB, Mermaid, GitHub**
 
-*Methods: Descriptive Statistics, Data Visualization, Mathematical Verification*
+**Methods: Descriptive Statistics, Data Visualization, Mathematical Verification**
 
 
 
@@ -44,7 +31,7 @@ The values are organized into a MATLAB table with two columns:
 
 - Data1 — numerical value
 
-This is a synthetic dataset created for educational and demonstration purposes.
+**This is a synthetic dataset created for educational and demonstration purposes.**
 
 
 
@@ -86,16 +73,17 @@ The following descriptive statistical measures are calculated:
 
 The sample standard deviation is calculated using two methods:
 
-    Method 1: MATLAB built-in function
-
-    std(data)
+    Method 1: 
+    - MATLAB built-in function:
+        std(data)
 
     
-    Method 2: Mathematical formula
+    Method 2: 
+    - Mathematical formula:
+        [
+        s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
+        ]
 
-    [
-    s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
-    ]
 
 **The difference between the two results is calculated to verify numerical consistency.**
 
@@ -118,70 +106,80 @@ Four visualizations are produced:
 
 The Gaussian curve is included as a theoretical comparison and does not establish that the ten observations follow a normal distribution.
 
+[View Flowchart](Result/Plot.png)
 
 
 
 ### 5. Analysis Workflow
 
 The project workflow is documented using a Mermaid flowchart.
+The editable Mermaid source is available in Results/Flowchart.mmd
+
+[View Flowchart](Result/Flowchart.mmd)
 
 
-
-The editable Mermaid source is available in Results/Flowchart.mmd.
 
 ### 6. Project Structure
 
-M_Stat_Analysis/
-│
-├── Matlab_Statistics_Boxplot.m
-├── README.md
-│
-├── Data/
-│   └── sample_data.csv
-│
-└── Result/
-    ├── statistical_summary.csv
-    ├── calculation_stat_measures.csv
-    ├── std_verification.csv
-    ├── statistical_plots.png
-    ├── Flowchart.png
-    └── Flowchart.mmd
+    M_Stat_Analysis/
+    │
+    ├── Matlab_Statistics_Boxplot.m
+    ├── README.md
+    │
+    ├── Data/
+    │   └── sample_data.csv
+    │
+    └── Result/
+        ├── statistical_summary.csv
+        ├── calculation_stat_measures.csv
+        ├── std_verification.csv
+        ├── statistical_plots.png
+        ├── Flowchart.png
+        └── Flowchart.mmd
+
+
 
 ### 7. How to Run the Project
 
-Open MATLAB.
-
-Download or clone the repository.
-
-Set the MATLAB Current Folder to the project directory.
-
-Open Matlab_Statistics_Boxplot.m.
-
-Run the script.
-
-Review the calculated tables in the Command Window and the generated figure.
-
-Find the exported CSV files and PNG visualization in the Data and Results folders.
+        - Open MATLAB.
+        
+        - Download or clone the repository.
+        
+        - Set the MATLAB Current Folder to the project directory.
+        
+        - Open Matlab_Statistics_Boxplot.m.
+        
+        - Run the script.
+        
+        - Review the calculated tables in the Command Window and the generated figure.
+        
+        - Find the exported CSV files and PNG visualization in the Data and Results folders.
 
 The project uses MATLAB's Statistics and Machine Learning Toolbox for prctile and boxplot.
+
+
+
 
 ### 8. Project Outcomes
 
 This project demonstrates practical experience in:
 
-Organizing numerical observations in MATLAB tables.
+    - Organizing numerical observations in MATLAB tables.
 
-Applying descriptive statistical functions.
+    - Applying descriptive statistical functions.
 
-Implementing and verifying statistical formulas.
+    - Implementing and verifying statistical formulas.
 
-Creating and interpreting statistical visualizations.
+    - Creating and interpreting statistical visualizations.
 
-Exporting reproducible analytical results.
+    - Exporting reproducible analytical results.
 
-Documenting an analytical workflow for GitHub.
+    - Documenting an analytical workflow for GitHub.
 
-9. Limitations and Future Improvements
+
+    
+
+### 9. Limitations and Future Improvements
 
 The dataset is small and synthetic, so the results are intended to demonstrate analytical methods rather than support real-world statistical conclusions.
 
